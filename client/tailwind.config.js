@@ -1,10 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
       sm: "340px",
@@ -15,20 +13,20 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#00FFE1',
-        secondary: '#898989',
-        tertiary: '#28365f',
-        deep: '#2b55cc',
-        darktxt: '#848db3',
-        darkBlue: '#151a33',
-        skills: '#F2F2F2',
+        primary: "#555",
+        secondary: "#898989",
+        tertiary: "#28365f",
+        deep: "#2b55cc",
+        darktxt: "#848db3",
+        darkBlue: "#151a33",
+        skills: "#F2F2F2",
         projects: "#161616",
-        darknight: "#252A2F"
+        darknight: "#252A2F",
       },
       fontFamily: {
-        dodoo: ['Sacramento']
-      }
+        dodoo: ["Raleway"],
+      },
     },
   },
   plugins: [],
-}
+};
