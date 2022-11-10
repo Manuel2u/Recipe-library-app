@@ -46,6 +46,16 @@ app.get("/api/recipes", (req, res) => {
   });
 });
 
+app.get("/api/recipes/:id", (req, res) => {
+  Recipe.findById(req.params.id, (err, result) => {
+    if (err) {
+      res.json(err);
+    } else {
+      res.json(result);
+    }
+  });
+});
+
 app.post("/api/create", (req, res) => {
   const recipe = new Recipe({
     title: req.body.title,

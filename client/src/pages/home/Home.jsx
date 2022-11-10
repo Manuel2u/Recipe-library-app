@@ -1,5 +1,6 @@
 import React from "react";
 import RecipeList from "../../components/RecipeList";
+import "../home/home.css";
 
 export default function Home() {
   return (
